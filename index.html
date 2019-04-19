@@ -4,28 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Restaurant web page</title>
-  <meta name="description" content="We offer good and quality food">
+  <title>Red Horns</title>
+  <meta name="description" content="We offer good and quality time">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Cookie|Zilla+Slab" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:200,300,400,700" rel="stylesheet">
+
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
 </head>
 
 <body>
-  <header class="container"> 
-    <a href="index.html" class='logo'><img src="img/logo.png"  alt="red horns logo"></a>
+  <header class="container clearfix"> 
+    <a href="index.html" class="logo"><img src="img/logo.png"  id="rednegro"></a>
     <nav class="nav">
-      <ul>
+      <ul class="unstyle-list">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#sandwich">Sandwich and Beer</a></li>
         <li><a href="#About">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <button class="burger"> 
@@ -35,103 +37,164 @@
     </button>
   </header>
 <!-- END OF HEADER -->
-
+<main>
 <!-- HERO SECTION  -->
 
-<section class="container" id="home">
-  <ul>
-    <li>
-    <h2>Tired ? Come to us and enjoy</h2>
-    <p><span>Let’s make some new memories</span></p>
-  </li>
+<section class="hero">
+        
+  <div class="flexslider">
+  <ul class="slides">
+    <li style="background-image: url(img/a.jpg);">
+      <h1>Tired ? Come to us and enjoy</h1>
+      <p>Let’s make some new memories</p>
+    
+    </li>
   </ul>
+</div>
+
 </section>
 
 <!-- END HERO SECTION  -->
 <!-- MENU SECTION  -->
-<section class="menu" id="#sandvich">
-  <ul>
-    <h2>Sendwiches and Beers  </h2>
-    <h4>Sandwiches :</h4>
-    <li>sendwich kulen....... 10$</li>
-    <li>sendwich pork........ 12$</li>
-    <li>sendwich chicken..... 12$</li>
-    <li>sendwich tune........ 11$</li>
-    <li>sendwich vegan....... 15$</li>
-    <li>sendwich Red Horns... 15$</li>
-    <h4>Beers :</h4>
-    <li>Draft beer dark...... 6$ </li>
-    <li>Draft beer light..... 5$ </li>
-    <li>Red beer............. 5$ </li>
-    <li>Craft beer........... 8$ </li>
-    <li>Wheat beer........... 5$ </li>
-    <li>Red Hours beer....... 3$ </li>
-  </ul>
-<img src="img/happy.png" alt="happy">
-<p>2AM - 3AM </p>
-<P>2PM - 3PM </P>
-<P>for sendwiches and beers</P>
+
+<section class="menu clearfix" a href="#sandwich"	>
+  <div class="container">
+    <h2>Sandwiches and Beer</h2>
+    <p>The best to find what we have is to come to us and see by yourself.There is some traditional drinks and meals .After years and years of experience we find ourself to make combination and we made some special thing for you to offer. So come to us and find out cause that is the best way
+    </p>
+      <ul>
+        <li><strong>Sandwiches : </strong></li>
+        <li><span>sendwich kulen</span> <em>10$</em></li>
+        <li><span>sendwich pork</span> <em>12$</em></li>
+        <li><span>sendwich chicken</span>  <em>12$</em></li>
+        <li><span>sendwich tune</span> <em>11$</em></li>
+        <li><span>sendwich vegan</span> <em>15$</em></li>
+        <li><span>sendwich Red Horns</span> <em>15$</em></li>
+      </ul>
+      <ul>
+        <li><strong>Beers :</strong></li>
+        <li><span>Draft beer dark</span> <em>6$</em> </li>
+        <li><span>Draft beer light</span> <em>5$</em></li>
+        <li><span>Red beer</span><em> 5$</em> </li>
+        <li><span>Craft beer</span> <em>8$</em> </li>
+        <li><span>Wheat beer</span><em>5$</em> </li>
+        <li><span>Red Hours beer</span><em>3$</em> </li>
+     </ul>
+  </div>
+    <div class="happy clearfix">
+      <img src="img/happy.png" id="happy">
+      <p><strong>2AM - 3AM </strong></p>
+      <p><strong>2PM - 3PM </strong></p>
+      <p><strong>for sendwiches and beers</strong></p>
+    </div>
+  </div>
 </section>
 <!-- END OF MENU SECTION -->
 
 <!-- RECOMENDED SECTION  -->
-<section class="Recomended beers">
-
-  <h4>Recomended beers</h4>
-  <ul>
-    <img src="img/01.jpg" alt="pivo1">
-      <li>Wheat beer 6 % al. </li>
-    <img src="img/02.jpg" alt="pivo2">
-      <li>Draft beer light 4,5 % al.</li>
-    <img src="img/03.jpg" alt="pivo3">
-      <li>Red Hourns beer 6,5 % al.</li>
-    <img src="img/04.jpg" alt="pivo4">
-      <li>Reed beer 12 % al </li>
-    
+<section class="recomended clearfix" id="recomended">
+  <div class="container">
+  <h3>Recomended crafts :</h3>
+  <ul>  
+    <li>
+      <img src="img/01.jpg" alt="pivo1">
+      <p><strong> Wheat beer 6 % al</strong></p>
+    </li>
+   
+    </li>
+    <li> 
+       <img src="img/02.jpg" alt="pivo2">
+      <p><strong>Red Hourns beer 6,5 % al.</strong></p>
+    </li>
+     <li>
+      <img src="img/03.jpg" id="pivo3">
+     
+      <p><strong>Draft beer light 4,5 % al.</strong></p>
+    <li>
+      <img src="img/04.jpg" id="pivo4">
+      <p><strong>Reed beer 12 % al </strong></p>
+    </li>
   </ul>
+</div>
 </section>
+
 <!-- END OF RECOMENDED SECTION -->
 
 <!-- ABOUT SECTION  -->
-<section class="About" id="#About" >
-
+<section class="about" >
+		
+  <div class="container">
   <h2>About</h2>
-  <img src="img/11.jpg"alt="pero"aling="center">
-  <img src="img/22.jpg"alt="prostor">
-  <img src="img/33.jpg"alt="svirka">
-  <img src="img/44.jpg"alt="bubnjar">
-  <img src="img/55.jpg"alt="pevac">
-
-<p aling="right">Today's pub is iconic because of people.People make this place special. One of center of culture of Rock&Roll.Every  single geek  for amater bands is always for free. There is a lot of who had a geek here in the RED HORNS are on hall of fame. So ,be first to see the geeks ,maybe the band you saw maybe is next ROCK GOD-Where is party the is unlimited booze of every kind.We offer some unique cocktail.Ofcourse, we have small kitchen becouse when you feel  like in you HOUSE you want to eat something.We offering some chicken sendwiches,pork sendwich etc. So do you people feel better and most important satisfied</p>
+    <p>Today's pub is iconic because of people.People make this place special. One of center of culture of Rock&Roll.Every  single geek  for amater bands is always for free. There is a lot of who had a geek here in the RED HORNS are on hall of fame. So ,be first to see the geeks ,maybe the band you saw maybe is next ROCK GOD-Where is party the is unlimited booze of every kind.We offer some unique cocktail.Ofcourse, we have small kitchen becouse when you feel  like in you HOUSE you want to eat something.We offering some chicken sendwiches,pork sendwich etc. So do you people feel better and most important satisfied</p>
+</div>
+  <ul class="dvekolone clearfix">
+    <li class="first"><img src="img/11.jpg"alt="pero" class="pero"></li>
+    <li><img src="img/33.jpg"alt="svirka"></li>
+    <li><img src="img/55.jpg"alt="pevac"></li>
+    <li><img src="img/44.jpg"alt="bubnjar"></li>
+    <li><img src="img/22.jpg"alt="prostor" id="prostor"></li>
+  </ul>
+<!-- <img src="img/guitar.png" alt="guitar" id="gitara"> -->
 </section>
+
 <!-- END ABOUT SECTION  -->
 
 
-
 <!-- CONTACT SECTION  -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- END CONTACT SECTION  -->
-  <!-- Add your site or application content here -->
+<section class="contact clearfix" #contact>
   
+    <h2>Contact</h2>
+    <ul class="contactli">
+      <li>
+        <p>Business hours</p>
+        <p><strong> 00-12pm</strong></p>
+      </li>
+      <li>
+        <p>
+          Address
+          </p>
+          <li>
+            <p>
+          <strong>St.Dave Mustane</strong>
+          </li>
+        </p>
+        <li>
+         <p>
+          <strong>
+          325/12</strong>
+        </p>
+        </li>
+        <li>
+          <p><strong>
+          New Texas</strong>
+        </p>
+         <img src="img/bass.jpg" id="bass">
+      </li>
+    </ul>
+</section>
+<!--END CONTACT SECTION  -->
 
-
-
-
+<!-- FOOTHER SECTION  -->
+<footer class="footer" id="footer">
+    <div class="container" >
+      <div class="logo-copy-wrap">
+        <a href="index.html" class="logo"><img src="img/logo.png"  alt="red horns logo" id="downlogo"></a>
+        <p>&copy; All Rights Reserved 2019</p>
+      </div>
+      <ul class="social" >
+        <li><a href="https://facebook.com"><p>Facebook</p></a></li>
+        <li><a href="https://instagram.com"><p>Instagram</p></a></li>
+        <li><a href="https://pinterest.com"><p>Pinterest</p></a></li>
+        <li><a href="https://twitter.com"><p>Twitter</p></a></li>
+      </ul>
+    </div>
+  </footer>
+</main> 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
 </body>
-
 </html>
